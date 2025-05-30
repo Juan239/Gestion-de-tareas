@@ -17,7 +17,7 @@ Esto instalará las dependencias necesarias para ejecutar el proyecto.
 
 ## Ejecución del backend
 
-**Antes de iniciar el proyecto se debe crear un archivo .env** en la carpeta Backend con los siguientes datos:
+Deje añadido el archivo .env para que no haya problemas al querer probarlo, esto no se debería hacer pero en esta ocasión lo voy a subir, consta de lo siguiente:
 
 * DB_RUTA, que es la ruta donde se guardo la base de datos SQLite, en mi caso la guardé en "./src/database/todo.db" pero puede ser modificada acá.
 
