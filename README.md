@@ -31,9 +31,9 @@ Para ejecutar el frontend, bastaría con abrir el archivo index.html que está e
 ## Explicación del diseño
 En el diseño de la API, elegí separar todas las funcionalidades, separando en modelo, controlador y rutas para poder realizar una mejor mantención del código y poder encontrar y corregir bugs de una mejor forma. De esta manera pude implementar websockets de forma eficiente en las funciones que debían tenerlo.
 
-Mi idea era que al momento de crear, modificar o eliminar las tareas actuará el websocket, emitiendo un mensaje con los datos solicitados en la prueba, mensaje que sería tomado por el frontend.
+Mi idea era que al momento de crear, modificar o eliminar las tareas actuará el websocket, emitiendo un mensaje con los datos solicitados en la prueba, mensaje que sería tomado por el frontend, lo cual se ejecuta una vez el controlador reciba la respuesta de que los datos fueron creados o modificados correctamente.
 
-En este último hay una variable "tareas" la cual en el primer ingreso a la página obtiene todas las tareas desde la API, luego dependiendo de los mensajes que recibe por el websocket iría añadiendo, eliminando o modificando los elementos que están guardados dentro de la variable, luego se ejecuta una función que actualiza la lista con los datos que tenga la variable tareas, de esta manera se cumple la funcionalidad de que la lista se actualice dinámicamente con los eventos del servidor.
+En el frontend hay una variable "tareas" la cual en el primer ingreso a la página obtiene todas las tareas desde la API, luego dependiendo de los mensajes que recibe por el websocket iría añadiendo, eliminando o modificando los elementos que están guardados dentro de la variable, luego se ejecuta una función que actualiza la lista con los datos que tenga la variable tareas, de esta manera se cumple la funcionalidad de que la lista se actualice dinámicamente con los eventos del servidor.
 
 Me hubiera gustado implementar algunas mejoras al sistema las cuales explico a continuación:
 
