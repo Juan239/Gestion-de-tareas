@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de tareas</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <h1>Gestión de tareas</h1>
+  <div class="container">
+    <div class="tareas">
+        <h2>Tareas</h2>
+        <ul id="listaTareas">
+
+        </ul>
+    </div>
+    <div class="formulario">
+        <h2>Añadir tarea</h2>
+        <form id="tareaForm">
+            <input type="text" id="tituloTareaInput" placeholder="Escribe una tarea" required />
+            <textarea id="descripcionTareaInput" placeholder="Descripción de la tarea"></textarea>
+            <button type="submit">Añadir</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
